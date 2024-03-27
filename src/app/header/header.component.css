@@ -1,0 +1,17 @@
+header {
+    background-color: papayawhip;
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+header a{
+    color: green;
+    text-decoration: none;
+    margin: 20px;
+}
+
+header a:hover{
+    color: red;
+    text-decoration: underline;
+}
