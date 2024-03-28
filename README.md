@@ -4,6 +4,10 @@
 
 ![Result - 1](Images/result.png)
 
+## Второе дз
+
+![Result - 2](Images/result-2.png)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
 
 ## Development server
