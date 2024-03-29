@@ -1,0 +1,15 @@
+<h1>Books</h1>
+<hr>
+<div class="books">
+    <div *ngFor="let book of books" (click)="clickHandler(book)">
+        <h2>{{book.title}}</h2>
+        <p>{{book.year}}</p>
+    </div>
+</div>
+
+<hr>
+
+<div class="selected-book">
+    <h2>You choosed</h2>
+    <p>{{selectedBook.title}}</p>
+</div>

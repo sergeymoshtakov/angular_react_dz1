@@ -1,0 +1,26 @@
+<div>
+    <button (click)="changeBold()" [ngClass]="{bold : isBold}">Bold</button>
+    <button (click)="changeItalic()" [ngClass]="{italic : isItalic}">Italic</button>
+    <button (click)="changeUnderlined()" [ngClass]="{underline : isUnderlined}">Underline</button>
+    <select [(ngModel)]="fontSize">
+        <option value="12">12</option>
+        <option value="16">16</option>
+        <option value="24">24</option>
+        <option value="32">32</option>
+    </select>
+    <input type="color" [(ngModel)]="color">
+    <p>{{fontSize}}</p>
+</div>
+<textarea [ngClass]="{
+    bold : isBold,
+    italic : isItalic,
+    underline : isUnderlined,
+}"
+[ngStyle]="{
+    'font-size': fontSize + 'px',
+    color: color
+}"
+></textarea>
+<br>
+<input type="text" [(ngModel)]="name">
+<p>{{name}}</p>

@@ -9,6 +9,9 @@ import { FooterComponent } from './footer/footer.component';
 import { ProviderComponent } from './provider/provider.component';
 import { SeeWorldComponent } from './see-world/see-world.component';
 import { DealsDestinationsComponent } from './deals-destinations/deals-destinations.component';
+import { PwBindingComponent } from './pw-binding/pw-binding.component';
+import { FormsModule } from '@angular/forms';
+import { BookComponent } from './book/book.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +21,14 @@ import { DealsDestinationsComponent } from './deals-destinations/deals-destinati
     FooterComponent,
     ProviderComponent,
     SeeWorldComponent,
-    DealsDestinationsComponent
+    DealsDestinationsComponent,
+    PwBindingComponent,
+    BookComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
