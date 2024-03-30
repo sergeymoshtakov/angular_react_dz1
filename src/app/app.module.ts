@@ -12,6 +12,7 @@ import { DealsDestinationsComponent } from './deals-destinations/deals-destinati
 import { PwBindingComponent } from './pw-binding/pw-binding.component';
 import { FormsModule } from '@angular/forms';
 import { BookComponent } from './book/book.component';
+import { IphoneComponent } from './iphone/iphone.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { BookComponent } from './book/book.component';
     SeeWorldComponent,
     DealsDestinationsComponent,
     PwBindingComponent,
-    BookComponent
+    BookComponent,
+    IphoneComponent
   ],
   imports: [
     BrowserModule,

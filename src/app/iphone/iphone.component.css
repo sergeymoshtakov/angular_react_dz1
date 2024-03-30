@@ -1,0 +1,27 @@
+.selected-image{
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    background-color: #f0f0f0;
+}
+
+.selected-image img{
+    height: 300px;
+    width: auto;
+}
+
+.images h3{
+    text-align: center;
+    font-size: 1.5em;
+    color: #000;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
