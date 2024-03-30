@@ -8,17 +8,26 @@
         <option value="24">24</option>
         <option value="32">32</option>
     </select>
+    <button (click)="changeCase()" [ngClass]="{uppercase : textCase}">Tt</button>
+    <select [(ngModel)]="fontStyle">
+        <option value="Arial">Arial</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Verdana">Verdana</option>
+        <option value="Courier New">Courier New</option>
+        <option value="Georgia">Georgia</option>
+    </select>
     <input type="color" [(ngModel)]="color">
-    <p>{{fontSize}}</p>
 </div>
 <textarea [ngClass]="{
     bold : isBold,
     italic : isItalic,
     underline : isUnderlined,
+    uppercase : textCase,
 }"
 [ngStyle]="{
     'font-size': fontSize + 'px',
-    color: color
+    color: color,
+    'font-family': fontStyle,
 }"
 ></textarea>
 <br>

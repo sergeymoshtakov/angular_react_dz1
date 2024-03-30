@@ -9,9 +9,12 @@ export class PwBindingComponent {
   isBold: boolean = false;
   isItalic: boolean = false;
   isUnderlined: boolean = false;
+  textCase: boolean = false;
   name: string = '';
   fontSize: number = 12;
+  fontStyle : string = 'Arial';
   color: string = '#000';
+  text: any;
   
   showAlert(event : Event) {
     console.log(event);
@@ -27,5 +30,9 @@ export class PwBindingComponent {
 
   changeUnderlined(){
     this.isUnderlined = !this.isUnderlined;
+  }
+
+  changeCase(){
+    this.textCase = !this.textCase;
   }
 }
