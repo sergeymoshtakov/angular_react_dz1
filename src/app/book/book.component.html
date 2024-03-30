@@ -3,7 +3,7 @@
 <div class="books">
     <div *ngFor="let book of books" (click)="clickHandler(book)">
         <h2>{{book.title}}</h2>
-        <p>{{book.year}}</p>
+        <p>{{book.author}}</p>
     </div>
 </div>
 
@@ -11,5 +11,10 @@
 
 <div class="selected-book">
     <h2>You choosed</h2>
+    <img [src]="selectedBook.img" alt="">
     <p>{{selectedBook.title}}</p>
+    <p>{{selectedBook.author}}</p>
+    <p>{{selectedBook.year}}</p>
+    <p>{{selectedBook.description}}</p>
+    <p>{{selectedBook.price}}</p>
 </div>

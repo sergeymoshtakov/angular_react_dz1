@@ -1,0 +1,15 @@
+.selected-book{
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.selected-book img{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 10px;
+}

@@ -8,6 +8,12 @@
 
 ![Result - 2](Images/result-2.png)
 
+## Третье дз
+
+![Result - 3](Images/result-3.png)
+
+![Result - 4](Images/result-4.png)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.2.
 
 ## Development server
