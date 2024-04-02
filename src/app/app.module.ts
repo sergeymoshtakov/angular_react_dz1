@@ -13,6 +13,10 @@ import { PwBindingComponent } from './pw-binding/pw-binding.component';
 import { FormsModule } from '@angular/forms';
 import { BookComponent } from './book/book.component';
 import { IphoneComponent } from './iphone/iphone.component';
+import { HomeComponent } from './site/home/home.component';
+import { ContactComponent } from './site/contact/contact.component';
+import { FeaturesComponent } from './site/features/features.component';
+import { HeaderTopComponent } from './site/header-top/header-top.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,11 @@ import { IphoneComponent } from './iphone/iphone.component';
     DealsDestinationsComponent,
     PwBindingComponent,
     BookComponent,
-    IphoneComponent
+    IphoneComponent,
+    HomeComponent,
+    ContactComponent,
+    FeaturesComponent,
+    HeaderTopComponent
   ],
   imports: [
     BrowserModule,

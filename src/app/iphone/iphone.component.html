@@ -2,7 +2,9 @@
     <img [src]="selctedImage.img" alt="">
 </div>
 <div class="images">
-    <div *ngFor="let image of images" (click)="clickHandler(image)">
-        <h3>{{image.title}}</h3>
+    <div *ngFor="let image of images" (click)="clickHandler(image)" [ngStyle]="{
+        color : image.title
+    }">
+        <p>{{image.title}}</p>
     </div>
 </div>
