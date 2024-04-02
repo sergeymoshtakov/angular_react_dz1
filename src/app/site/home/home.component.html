@@ -1,0 +1,29 @@
+<section>
+    <h1>Users</h1>
+    <div class="row">
+        <div class="item" *ngFor="let user of users">{{user}}</div>
+        @for(user of users; track $index){
+            <div class="item">
+                {{user}}
+            </div>
+        }
+    </div>
+</section>
+
+<hr>
+
+<section>
+    <h1>Products</h1>
+    <div class="row">
+        @for(product of products; track $index){
+            <div class="item" (click)="show($index)">
+                <h2>{{product.title}}</h2>
+                <p>{{$index}}</p>
+                <p>{{product.price}}</p>
+                <p>{{product.resolution}}</p>
+            </div>
+        }@empty{
+            <h2>No products</h2>
+        }
+    </div>
+</section>
